@@ -1,0 +1,12 @@
+import coin from '../Assets/Images/coin.png'
+import edit from '../Assets/Images/edit.png'
+import file from '../Assets/Images/file.png'
+import leftArrow from '../Assets/Images/left-arrow.png'
+import location from '../Assets/Images/location.png'
+import medicine from '../Assets/Images/medicine.png'
+import phone from '../Assets/Images/phone.png'
+import rightArrow from '../Assets/Images/right-arrow.png'
+import steth from '../Assets/Images/stethoscope.png'
+import close from '../Assets/Images/close.png'
+import home from '../Assets/Images/home.png'
+export const images = {coin,edit,file,leftArrow,location,medicine,phone,rightArrow,steth,close,home};
