@@ -3,12 +3,18 @@ import styled from "styled-components";
 export const Header = styled.h4`
 margin:0;
 background-color:white;
-padding:1rem 4rem;`
+padding:1rem 4rem;
+@media (max-width: 420px) {
+    padding:1rem 2rem;
+  }`
 
 export const SearchBar = styled.div`
 background-color:#033280;
 color:white;
-padding:1.5rem 4rem;`
+padding:1.5rem 4rem;
+@media (max-width: 420px) {
+    padding:1rem 2rem;
+  }`
 
 export const AreaPlan = styled.div`
 margin-bottom:1.5rem;

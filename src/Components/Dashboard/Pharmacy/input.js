@@ -1,4 +1,4 @@
-import { Input, InputType, Inputs, Select, Choose, Cost, Button, Box, Heading, PharmacyCount, Invalid } from "./inputStyle"
+import { Input, InputType, Inputs, Select, Choose, Cost, Button, Box, Heading, PharmacyCount, Invalid ,Label} from "./inputStyle"
 import { pharmacy } from "../../../Resources/string"
 import { useState, useRef } from "react"
 import { Availablility } from "./pharmacyName"
@@ -33,11 +33,11 @@ export default function PharmacyInput() {
                 <HeaderPart />
                 <Input>
                     <InputType>
-                        <label htmlFor="pharmacyName">{pharmacy.name}</label>
+                        <Label htmlFor="pharmacyName">{pharmacy.name}</Label>
                         <Inputs type="text" name="name" id="pharmacyName" />
                     </InputType>
                     <InputType>
-                        <label htmlFor="radius">{pharmacy.radius}</label>
+                        <Label htmlFor="radius">{pharmacy.radius}</Label>
                         <Select id="radius"  >
                             <option value="1">1 Mile</option>
                             <option value="2">2 Mile</option>
@@ -47,7 +47,7 @@ export default function PharmacyInput() {
                         </Select>
                     </InputType>
                     <InputType>
-                        <label htmlFor="type">{pharmacy.pharmtype}</label>
+                        <Label htmlFor="type">{pharmacy.pharmtype}</Label>
                         <Select id="type">
                             <option value="all">All</option>
                             <option value="hospital">Hospital</option>
@@ -58,28 +58,28 @@ export default function PharmacyInput() {
                     </InputType>
 
                     <InputType>
-                        <label>{pharmacy.hours}</label>
+                        <Label>{pharmacy.hours}</Label>
                         <Choose>
                             <input ref={hours} type="checkbox" name="hours" id="hours" value="24 hours" />
-                            <label htmlFor="hours">24-Hour Pharmacy</label>
+                            <Label htmlFor="hours">24-Hour Pharmacy</Label>
                         </Choose>
                     </InputType>
                     <InputType>
-                        <label>{pharmacy.cost}</label>
+                        <Label>{pharmacy.cost}</Label>
                         <Cost>
                             <Choose>
                                 <input ref={all} type="radio" name="cost" id="all" value="all" />
-                                <label htmlFor="all">All</label>
+                                <Label htmlFor="all">All</Label>
                             </Choose>
 
                             <Choose>
                                 <input ref={standard} type="radio" name="cost" id="standard" value="standard" />
-                                <label htmlFor="standard">Standard Cost Share</label>
+                                <Label htmlFor="standard">Standard Cost Share</Label>
                             </Choose>
 
                             <Choose>
                                 <input ref={prefer} type="radio" name="cost" id="preferred" value="preferred" />
-                                <label htmlFor="preferred">Preferred Cost Share</label>
+                                <Label htmlFor="preferred">Preferred Cost Share</Label>
                             </Choose>
                         </Cost>
                     </InputType>

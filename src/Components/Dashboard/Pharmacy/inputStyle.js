@@ -13,8 +13,10 @@ color:black;
 padding:1rem;
 border-radius:6px;
 @media (max-width: 420px) {
-    grid-template-columns:45% 50%;
-    gap:1rem;
+    display:flex;
+    flex-direction:column;
+    margin:0 2rem;
+    row-gap:1rem;
 }`
 
 export const InputType = styled.div`
@@ -24,18 +26,34 @@ row-gap:4px;`
 
 export const Inputs = styled.input`
 width:60%;
+@media (max-width: 420px) {
+   width:90%;
+}
 `
 export const Select = styled.select`
 width:60%;
+@media (max-width: 420px) {
+    width:95%;
+ }
 `
+export const Label = styled.label`
+@media (max-width: 420px) {
+    margin:0 auto;
+ }`
 export const Choose = styled.div`
 display:flex;
 align-items:center;
 column-gap:5px;
+@media (max-width: 420px) {
+    margin:0 auto;
+ }
 `
 export const Cost = styled.div`
 display:flex;
-flex-wrap:wrap;`
+flex-wrap:wrap;
+@media (max-width: 420px) {
+    flex-direction:column;
+ }`
 
 export const Button = styled.button`
 width: 50%;
@@ -59,7 +77,10 @@ margin:0;`
 export const PharmacyCount = styled.p`
 margin:0;
 padding:1rem 4rem;
-color:white;`
+color:white;
+@media (max-width: 420px) {
+    padding:1rem 2rem;
+  }`
 
 export const Invalid = styled.h1`
 text-align:center;`

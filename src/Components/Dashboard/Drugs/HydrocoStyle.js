@@ -140,7 +140,10 @@ text-decoration:none;
 color:blue;`
 
 export const Information = styled.div`
-padding-left:4rem;`
+padding-left:4rem;
+@media (max-width: 420px) {
+    padding-left:2rem;
+  }`
 
 export const TherapyInfo = styled.p`
 width:80%;

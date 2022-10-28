@@ -6,7 +6,10 @@ border-bottom:1px solid grey;`
 
 export const Body = styled.div`
 padding:1rem 4rem;
-background-color:lightblue;`
+background-color:lightblue;
+@media (max-width: 420px) {
+    padding:1rem 2rem;
+  }`
 
 export const BodyContentText = styled.p`
 width:80%;

@@ -2,12 +2,18 @@ import styled from "styled-components"
 
 export const DrugHeader = styled.h4`
 margin:0;
-padding:1rem 4rem;`
+padding:1rem 4rem;
+@media (max-width: 420px) {
+   padding:1rem 2rem;
+ }`
 
 export const Search = styled.div`
 background-color:#033280;
 color:white;
-padding:2rem 4rem;`
+padding:2rem 4rem;
+@media (max-width: 420px) {
+   padding:1rem 2rem;
+ }`
 
 export const AreaPlan = styled.div`
 column-gap:2%;

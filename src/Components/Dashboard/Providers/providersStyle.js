@@ -6,7 +6,10 @@ position:relative`
 export const Home = styled.div`
 display:flex;
 align-items:center;
-padding-left:4rem;`
+padding-left:4rem;
+@media (max-width: 420px) {
+  padding-left:2rem;
+}`
 
 export const Img = styled.img`
 width:18px;
@@ -17,13 +20,17 @@ margin-right:5px;`
 export const About = styled.div`
 padding:2rem 4rem;
 background-color:#14006b;
-color:white;`
+color:white;
+@media (max-width: 420px) {
+  padding-left:2rem;
+}`
 
 export const Information = styled.div`
 padding-left:4rem;
 margin-top:4rem;
 @media (max-width: 420px) {
-   margin-top:4rem;
+   margin-top:2.5rem;
+   padding-left:2rem;
  }`
 
 export const Purpose = styled.p`
@@ -57,12 +64,10 @@ justify-content:space-between;
     width:80%;
 }
 @media (max-width: 420px) {
-   top:20%;
+   top:21%;
    font-size:13px;
-   width:60%;
-   padding:4px;
-   flex-direction:column;
-   row-gap:10px;
+   width:80%;
+   padding:10px;
 }`
 
 export const InfoHead = styled.h3`
@@ -82,7 +87,8 @@ border:none;
 padding:8px 0;
 border-radius:10px;
 @media (max-width: 420px) {
-   padding:3px 0;
+   padding:5px 0;
+   width:90px;
  }
 `
 export const ButtonTag = styled.div`
