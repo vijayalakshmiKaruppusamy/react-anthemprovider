@@ -6,7 +6,7 @@ import { avail } from '../../../Resources/string'
 import { images } from "../../../Resources/images"
 import { HeaderPart } from "./pharmacy"
 import Footer from "../../Common/common"
-import { useState } from "react"
+import {  useState } from "react"
 import About from "./aboutPharmacy"
 import { pharmacydetails } from "../../../Resources/string"
 
@@ -25,6 +25,7 @@ export const Availablility = () => {
     const handleClick = event => {
         isShown(true);
     }
+   
     return (
         <Page>
             <Available>
@@ -64,6 +65,8 @@ export const Availablility = () => {
         </Page>
     )
 }
+
+
 
 
 

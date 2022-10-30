@@ -5,7 +5,7 @@ export const Available = styled.div`
 padding-left:4rem;
 width:30%;
 @media (max-width: 768px) {
-    width:40%;
+    width:35%;
     padding:0;
     };
  @media (max-width: 420px) {
@@ -16,7 +16,7 @@ width:30%;
 export const AddressContact = styled.div`
 font-size:14px;`
 
-export const PharmacyName = styled.h4`
+export const PharmacyName = styled.h3`
 margin:14px 0;
 color:black;`
 
@@ -25,10 +25,8 @@ display:flex;
 column-gap:10px;
 `
 export const Pharm = styled.div`
-// width:60%;
-
 border:1px solid grey;
-padding:0.5rem 2rem;
+padding:10px;
 &:hover{
     border-left:2px solid blue;
 }`
@@ -77,6 +75,7 @@ width:70%;`
 
 export const Page = styled.div`
 display:flex;
+margin:10px;
 @media (max-width: 420px) {
     flex-direction:column;
 }`

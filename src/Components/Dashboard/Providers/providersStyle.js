@@ -27,9 +27,9 @@ color:white;
 
 export const Information = styled.div`
 padding-left:4rem;
-margin-top:4rem;
+margin-top:5rem;
 @media (max-width: 420px) {
-   margin-top:2.5rem;
+   margin-top:4rem;
    padding-left:2rem;
  }`
 
@@ -51,6 +51,7 @@ position:absolute;
 top:10rem;
 margin-top:1rem;
 width:90%;
+height:68px;
 padding:1rem;
 box-shadow:1px 1px 1px 1px grey;
 color:black;

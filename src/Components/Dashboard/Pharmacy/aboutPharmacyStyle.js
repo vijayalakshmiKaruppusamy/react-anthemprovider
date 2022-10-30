@@ -5,6 +5,7 @@ color:black;`
 
 export const Pharm = styled.div`
 padding:0.5rem 2rem;
+width:70%;
 color:black;
 @media (max-width: 768px) {
     padding: 2px;

@@ -150,3 +150,10 @@ width:80%;
 @media (max-width: 768px) {
     font-size : 8px;
     }`
+
+export const ErrorMsg = styled.p`
+margin:0;
+color:red;
+@media (max-width: 420px){
+    font-size:15px;
+}`

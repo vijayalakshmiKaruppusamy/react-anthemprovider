@@ -175,3 +175,42 @@ const zipCode = "ZIP Code & Country"
 export const provider = {providerHeader,purpose,providerQuery,zipCode};
 
 
+export const pharmacyName =[
+ "Antibiotics",
+ "Albuterol",
+ "Antihistamines",
+ "Bandy-Plus",
+ "Benadryl Syrup",
+ "Broclear Tablet",
+ "Bilazest 20mg",
+ "Crocin Advance",
+ "Candiforce 200 Capsule",
+ "Dolo 650",
+ "Derobin Ointment",
+ "Enzoflam",
+ "Emeset",
+ "Hydrocodone",
+ "Eliwel 10mg",
+ "Flexon",
+ "Folitrax",
+ "Fludac Capsule",
+ "Glyciphage SR 500mg ",
+ "Gemer 2 Tablet PR" ,
+ "Grisovin-FP ",
+ "Gudlax-Plus Laxative Peppermint Sugar Free",
+ "Human Actrapid 40IU/ml Solution",
+ "Hylosoft Eye Drop",
+ "Hyperneb 3% Respules (4ml Each)",
+ "Indocap SR Capsule",
+ "Isotroin 20 Capsule",
+ "Influvac Tetra 2022 Vaccine",
+ "Jupiros 10 ",
+ "Ketorol-DT",
+ "Kutub 30 X ",
+ "Keralin Ointment",
+ "Librax 5 mg/2.5 mg Tablet",
+ "Levocet"
+  ];
+  
+
+

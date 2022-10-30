@@ -1,18 +1,34 @@
 import {
     Button, Hydrocodone, Hydro,Generic,HydroHeader, AlertMessages, Img, HydroContent,
     Alerts, Inputs, AlertText, InputLabel, Note, Count, Select, Buttons, ButtonContent,
-    GenericLink,Information,TherapyInfo,Heading
+    GenericLink,Information,TherapyInfo,Heading,ErrorMsg
 } from "./HydrocoStyle"
 import { images } from "../../../Resources/images"
 import { hydro } from "../../../Resources/string"
+import { Searching } from "./drug"
+import { useState,useRef } from "react"
 
 export default function Hydroco() {
-    return (
+    const quantity = useRef();
+    const [errors,isError] = useState({});
+
+ const HandleSubmit = () => {
+    isError(Validation(quantity.current.value));
+ }
+
+const Validation = (value) => {
+    const error = {};
+    if(value <= 0 || value === '')
+      error.quantity = "Please enter a Quantity greater than 0";
+    return error;
+  }
+     
+return (
         <>
         <Hydrocodone>
             <Hydro>
                 <HydroHeader>
-                <Heading>{hydro.hydroTitle}</Heading>
+                    <Searching.Consumer>{ value => <Heading>{value}</Heading>}</Searching.Consumer>
                 <Generic>GENERIC</Generic>
                 </HydroHeader>
                 <HydroContent>
@@ -31,7 +47,8 @@ export default function Hydroco() {
                     <Inputs>
                         <div>
                             <InputLabel>{hydro.quantity}</InputLabel>
-                            <Count type="number" />
+                            <Count type="number" ref={quantity} />
+                            <ErrorMsg>{errors.quantity}</ErrorMsg>
                         </div>
                         <div>
                             <InputLabel>{hydro.type}</InputLabel>
@@ -54,7 +71,7 @@ export default function Hydroco() {
                             <Note>{hydro.availability}</Note>
                             <Note>{hydro.date}</Note>
                         </div>
-                        <Button>Add Drug to List</Button>
+                        <Button onClick={HandleSubmit}>Add Drug to List</Button>
                     </Inputs>
 
                 </HydroContent>

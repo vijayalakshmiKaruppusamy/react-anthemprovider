@@ -23,7 +23,7 @@ transform: translate(-50%, -50%);
 line-height: 1.4;
 background: #f1f1f1;
 color:black;
-padding: 14px 0 14px 24px;
+padding: 14px 10px;
 border-radius: 8px;
 max-width: 600px;
 min-width: 300px;`
@@ -38,6 +38,7 @@ column-gap: 2px;`
 
 export const Close = styled.div`
 display: flex;
+justify-content:space-evenly;
 align-items: center;`
 
 export const Buttons = styled.button`
