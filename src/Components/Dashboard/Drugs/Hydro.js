@@ -29,7 +29,7 @@ return (
             <Hydro>
                 <HydroHeader>
                     <Searching.Consumer>{ value => <Heading>{value}</Heading>}</Searching.Consumer>
-                <Generic>GENERIC</Generic>
+                    <Generic>GENERIC</Generic>
                 </HydroHeader>
                 <HydroContent>
                     <Alerts>

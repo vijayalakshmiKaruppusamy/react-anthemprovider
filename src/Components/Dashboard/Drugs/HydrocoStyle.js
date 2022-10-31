@@ -4,12 +4,13 @@ import { Link } from "react-router-dom";
 export const HydroHeader = styled.div`
 display:flex;
 align-items:center;
-justify-content:space-between;`
+column-gap:6px;
+`
 
 export const Heading = styled.h3`
 font-size:24px;
 @media (max-width: 768px) {
-    font-size : 10px;
+    font-size : 14px;
     }`
 
 export const Generic = styled.p`
@@ -19,12 +20,16 @@ border:none;
 color:white;
 padding:5px;
 font-size:10px;
-background-color:#27039e`
+background-color:#27039e;
+@media (max-width: 420px) {
+   padding:3px;
+    }`
 
 export const Hydrocodone = styled.div`
 padding:3rem 4rem;
 @media (max-width: 420px) {
     padding:1rem 1.5rem;
+    font-size:12px;
  }`
 
 export const Hydro = styled.div`

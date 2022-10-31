@@ -4,7 +4,7 @@ import Footer from "../../Common/common"
 import { DrugHeader, Search, AreaPlan, Plan, Query, Input, SearchBar, Button, YearPlan,SearchItems } from "./drugPageStyle"
 import { useState, useRef } from 'react'
 import { images } from "../../../Resources/images"
-import { Modal, Overlay, ModalContent, Popuphead, ButtonTag, Close, Buttons, PopupContent } from './popupStyle'
+import { Modal, Overlay, ModalContent, Popuphead, ButtonTag, Close, Buttons, PopupContent,H4 } from './popupStyle'
 import {data} from '../../../../src/data'
 import { pharmacyName } from "../../../Resources/string"
 import React from "react"
@@ -66,7 +66,7 @@ export default function Drug() {
                                         </Close>
                                         <PopupContent>
                                             <p>By continuing this, You may Loose already added details of drugslist. </p>
-                                            <h4>Do you want to Continue?</h4>
+                                            <H4>Do you want to Continue?</H4>
                                         </PopupContent>
                                         <ButtonTag>
                                             <Buttons onClick={toggleModal}>Yes</Buttons>
