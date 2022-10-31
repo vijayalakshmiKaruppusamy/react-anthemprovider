@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-anthemprovider/static/css/main.e6c13ad2.css",
+    "main.js": "/react-anthemprovider/static/js/main.6e34f543.js",
+    "static/js/787.8395f9da.chunk.js": "/react-anthemprovider/static/js/787.8395f9da.chunk.js",
+    "index.html": "/react-anthemprovider/index.html",
+    "main.e6c13ad2.css.map": "/react-anthemprovider/static/css/main.e6c13ad2.css.map",
+    "main.6e34f543.js.map": "/react-anthemprovider/static/js/main.6e34f543.js.map",
+    "787.8395f9da.chunk.js.map": "/react-anthemprovider/static/js/787.8395f9da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.6e34f543.js"
+  ]
+}
