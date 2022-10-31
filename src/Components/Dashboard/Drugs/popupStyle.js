@@ -58,7 +58,12 @@ padding: 1.5%;;
 background-color: blue;
 border-radius: 6px;
 border: none;
-color: #f1f1f1;`
+color: #f1f1f1;
+&:hover{
+    background-color:white;
+    color:blue;
+    border:1px solid #c4c3c0;
+}`
 
 export const PopupContent = styled.div`
 padding:2% 10%;
