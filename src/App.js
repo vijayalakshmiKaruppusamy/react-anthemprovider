@@ -9,7 +9,7 @@ function App() {
   return (
    <BrowserRouter>
         <Routes>
-        <Route path="/anthem" element={<LandingPage />} />
+        <Route path="/react-anthemprovider" element={<LandingPage />} />
         <Route path="/provider" element={<Provider />} />
         <Route path='/drug' element={<Drug />} />
         <Route path='/pharmacy' element={<Pharmacy/>} />
